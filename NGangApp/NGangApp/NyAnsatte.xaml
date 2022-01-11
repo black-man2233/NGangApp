@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NGangApp.NyAnsatte">
+
+
+    <StackLayout Margin="20, 20, 20, 0">
+        <Entry x:Name="navneEntry" 
+            Placeholder="Navne"
+               PlaceholderColor="Blue"/>
+        <Entry x:Name="efternavneEntry" 
+            Placeholder="Efternavne"
+               PlaceholderColor="Blue"/>
+        <Entry x:Name="emailEntry" 
+            Placeholder="Email"
+               PlaceholderColor="MediumVioletRed"/>
+        <Entry x:Name="tlfNummerEntry" 
+            Placeholder="Telefon Nummer"
+             PlaceholderColor="OrangeRed"/>
+        <Entry x:Name="LoenEntry"
+            Placeholder="Løn"
+                PlaceholderColor="green"/>
+
+        <Button Text="Gem"
+                x:Name="gemKnap"
+                Clicked="gemKnap_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

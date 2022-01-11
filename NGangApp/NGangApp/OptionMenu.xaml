@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NGangApp.OptionMenu"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:local="crl"
+           
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarBackgroundColor="#1d1d1d"
+            SelectedTabColor="Gold"
+            UnselectedTabColor="#65A590"
+            >
+  <!--NavigationBar indhold-->
+    
+    <!--HJEM-->
+    <ContentPage Title="Hjem" IconImageSource="https://img.icons8.com/material-outlined/344/home-page.png">
+        <StackLayout>
+            <Frame BackgroundColor="Red" Padding="24" CornerRadius="0">
+                <Label Text="Her skal hjemmesiden indtastes!" TextColor="White" HorizontalTextAlignment="Center" FontSize="50"/>
+            </Frame>
+        </StackLayout>
+    </ContentPage>
+
+    <!--ANSATTE-->
+    <ContentPage Title="Ansatte" IconImageSource="https://cdn-icons-png.flaticon.com/512/912/912318.png">
+        <StackLayout>
+            <Image
+                BackgroundColor="NavajoWhite"
+                Source="https://toppng.com/uploads/preview/employees-png-happy-employees-png-png-employess-happy-employee-11556284452qiymghbz3q.png">
+            </Image>
+
+            <Label Text="I dette parameter, kan du se dine ansatte. Hvis nu du får nye ansatte i dit firma, N-Gang giver dig mulighed for, at redigere listen, så du kan føje dine nye medlemer."
+                   FontSize="20"/>
+            <Label Text="Vi arbejder på, en funktion som lader dig redigere de ansattes informationer og slette ansatte."
+                   FontSize="21"
+                   TextColor="red"
+                   />
+            <Label Text="Justering af ansattes løn kommer snart."
+                   FontSize="22"
+                   TextColor="Green"/>
+
+            <Button Text="Se mine ansatte" 
+                    FontSize="Large"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    TextColor="MistyRose"
+                    BackgroundColor="LightSeaGreen"
+                    Clicked="SendTilAnsatteListe">
+
+            </Button>
+        </StackLayout>
+    </ContentPage>
+
+    <!--VARER-->
+    <ContentPage Title="Varer" IconImageSource="https://cdn-icons-png.flaticon.com/512/1682/1682286.png">
+        <StackLayout>
+            <Button Text=" Her kan du håndtere varene" TextColor="Yellow"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                BackgroundColor="CornflowerBlue"
+                    FontSize="Large"/>
+
+        </StackLayout>
+    </ContentPage>
+
+    <!--ØKONOMI-->
+    <ContentPage Title="Økonomi" IconImageSource="https://icons.iconarchive.com/icons/iconsmind/outline/256/Money-2-icon.png">
+        <StackLayout>
+            <Image
+                BackgroundColor="DarkGoldenrod"
+                Source="https://www.ineteconomics.org/uploads/featured/iStock-1124996754.jpg">
+            </Image>
+
+            <Label Text="Med N-Gang app, holder du styrer på dine økonomiske beregninger. Vi ønsker med N-Gang at give dig adgang til de værdigefulde værktøje til din butiksfirma. Du får adgang til :" 
+                   FontSize="22"
+                   TextColor="DarkGreen" />
+
+            <Button Text="Lommeregner"
+                    Clicked="SendTilLommeregner"/>
+        </StackLayout>
+        
+    </ContentPage>
+
+</TabbedPage>

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NGangApp.Lommeregner">
+    <ContentPage.Content>
+
+        <StackLayout Padding="20">
+            <Frame BackgroundColor="AntiqueWhite"
+                   Padding="15" Margin="0,0,0,20">
+                
+                <Label Text="0"
+                       FontSize="36"
+                       FontAttributes="Bold"
+                       HorizontalOptions="End">
+                </Label>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!--1 række-->
+                <Button Grid.Row="0"
+                    Grid.Column="0"
+                    Text="C"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+
+                <Button Grid.Row="0"
+                    Grid.Column="1"
+                    Text="X"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    Padding="25"/>
+
+                <Button Grid.Row="0"
+                    Grid.Column="2"
+                    Text="%"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    Padding="25"/>
+
+                <Button Grid.Row="0"
+                    Grid.Column="3"
+                    Text="/"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    Padding="25"/>
+
+
+                <!--2 række-->
+                <Button Grid.Row="1"
+                    Grid.Column="0"
+                    Text="7"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    Padding="25"/>
+
+                <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Text="8"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    Padding="25"/>
+
+                <Button Grid.Row="1"
+                    Grid.Column="2"
+                    Text="9"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+
+                <Button Grid.Row="1"
+                    Grid.Column="3"
+                    Text="*"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+
+                <!--3 række-->
+                <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Text="4"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+
+                <Button Grid.Row="2"
+                    Grid.Column="1"
+                    Text="5"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+
+                <Button Grid.Row="2"
+                    Grid.Column="2"
+                    Text="6"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+
+                <Button Grid.Row="2"
+                    Grid.Column="3"
+                    Text="-"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+
+
+                <!--4 række-->
+                <Button Grid.Row="3"
+                    Grid.Column="0"
+                    Text="1"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+
+                <Button Grid.Row="3"
+                    Grid.Column="1"
+                    Text="2"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+
+                <Button Grid.Row="3"
+                    Grid.Column="2"
+                    Text="3"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+
+                <Button Grid.Row="3"
+                    Grid.Column="3"
+                    Grid.RowSpan="3"
+                    Text="+"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+
+
+                <!--5 række-->
+                <Button Grid.Row="4"
+                    Grid.Column="0"
+                    Text="."
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+
+                <Button Grid.Row="4"
+                    Grid.Column="1"
+                    Text="0"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+
+                <Button Grid.Row="4"
+                    Grid.Column="2"
+                    Text="="
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    Padding="30"/>
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
+    
+    
+    

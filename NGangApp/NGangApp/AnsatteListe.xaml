@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NGangApp.AnsatteListe">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ny"
+                     Clicked="NyAnsatte_Clicked" IconImageSource="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/plus-1024.png"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <ListView x:Name="ansatteListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Navne}"
+                              Detail="{Binding Efternavne}"
+                              TextColor="Green"
+                              DetailColor="Teal"
+                              />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+
+
+</ContentPage>
